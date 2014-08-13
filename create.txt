@@ -1,0 +1,1 @@
+ionic start --app-name 'Ionic Demo App' --id com.opitzconsulting.ionicdemo ionicdemo tabs
