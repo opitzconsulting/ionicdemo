@@ -24,10 +24,35 @@ angular.module('starter.services', [])
             }
           }
         })
-        .factory('QrCodeScanner', function() {
+        .factory('QrCodeScanner', function($q, $rootScope) {
           return {
             scanQrCode: function() {
-              return undefined;
+
+              var deferred = $q.defer();
+
+              barcodeScanner = cordova.require("cordova/plugin/BarcodeScanner");
+
+              barcodeScanner.scan(
+                      function(result) {
+                        console.info("We got a barcode\n" +
+                                "Result: " + result.text + "\n" +
+                                "Format: " + result.format + "\n" +
+                                "Cancelled: " + result.cancelled);
+
+                        if (result.cancelled) {
+                          deferred.reject();
+                        }
+                        deferred.resolve(result.text);
+                        $rootScope.$apply();
+                      },
+                      function(error) {
+                        console.info("error reject " + error);
+                        deferred.reject(error);
+                      }
+              );
+
+              return deferred.promise;
+              ;
             }
           }
         });
