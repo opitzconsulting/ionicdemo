@@ -4,7 +4,8 @@
     var services = angular.module('starter.services', []);
 
     services.factory('Tasks', function ($localStorage) {
-        var storage = $localStorage.$default({tasks: [], initalized: false});
+        var emptyStorage = {tasks: [], initalized: false};
+        var storage = $localStorage.$default(emptyStorage);
 
         function add(task) {
             storage.tasks.push(task);
@@ -12,6 +13,10 @@
 
         function all() {
             return storage.tasks;
+        }
+
+        function clear() {
+            $localStorage.$reset(emptyStorage);
         }
 
         function init() {
@@ -26,6 +31,7 @@
         return {
             add: add,
             all: all,
+            clear: clear,
             init: init
         }
 

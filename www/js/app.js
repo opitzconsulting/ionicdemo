@@ -48,6 +48,16 @@ angular.module('starter', ['ionic', 'ngStorage', 'starter.controllers', 'starter
       }
     })
 
+    .state('tab.actions', {
+      url: '/actions',
+      views: {
+        'tab-actions': {
+          templateUrl: 'templates/tab-actions.html',
+          controller: 'ActionsCtrl'
+        }
+      }
+    })
+
     .state('tab.friends', {
       url: '/friends',
       views: {
@@ -63,16 +73,6 @@ angular.module('starter', ['ionic', 'ngStorage', 'starter.controllers', 'starter
         'tab-friends': {
           templateUrl: 'templates/friend-detail.html',
           controller: 'FriendDetailCtrl'
-        }
-      }
-    })
-
-    .state('tab.account', {
-      url: '/account',
-      views: {
-        'tab-account': {
-          templateUrl: 'templates/tab-account.html',
-          controller: 'AccountCtrl'
         }
       }
     });
