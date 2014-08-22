@@ -1,0 +1,22 @@
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\classes.dex : \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\classes\com\ionic\keyboard\IonicKeyboard$1.class \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\classes\com\ionic\keyboard\IonicKeyboard$2.class \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\classes\com\ionic\keyboard\IonicKeyboard.class \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\classes\com\opitzconsulting\ionicdemo\BuildConfig.class \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\classes\com\opitzconsulting\ionicdemo\IonicDemoApp.class \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\classes\com\opitzconsulting\ionicdemo\R$array.class \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\classes\com\opitzconsulting\ionicdemo\R$attr.class \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\classes\com\opitzconsulting\ionicdemo\R$color.class \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\classes\com\opitzconsulting\ionicdemo\R$dimen.class \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\classes\com\opitzconsulting\ionicdemo\R$drawable.class \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\classes\com\opitzconsulting\ionicdemo\R$id.class \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\classes\com\opitzconsulting\ionicdemo\R$layout.class \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\classes\com\opitzconsulting\ionicdemo\R$menu.class \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\classes\com\opitzconsulting\ionicdemo\R$raw.class \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\classes\com\opitzconsulting\ionicdemo\R$string.class \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\classes\com\opitzconsulting\ionicdemo\R$xml.class \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\classes\com\opitzconsulting\ionicdemo\R.class \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\classes\com\phonegap\plugins\barcodescanner\BarcodeScanner.class \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\classes\org\apache\cordova\device\Device.class \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\dexedLibs\classes-e4ac0cc55db655a50ef7e43a8daac58a.jar \
+c:\Development\MTC\ionicdemo\platforms\android\ant-build\dexedLibs\com.google.zxing.client.android.captureactivity-cfa55f17cdffd40f495a7b0541b79b47.jar \
