@@ -18,8 +18,6 @@ angular.module('starter.controllers', [])
           $scope.scanQrCode = function() {
             $cordovaBarcodeScanner.scan().then(function(scannedQrCode) {
               $scope.scannedBarcode = scannedQrCode.text;
-            }, function(errorMessage) {
-
             });
           }
         });
