@@ -18,13 +18,13 @@
             $scope.taskModal.show();
         };
 
-        $scope.createNewTask = function(task) {
+        $scope.createNewTask = function (task) {
             $scope.taskModal.hide();
-            Tasks.add({ title: task.title })
+            Tasks.add({ title: task.title });
             task.title = "";
         };
 
-        $scope.closeNewTask = function() {
+        $scope.closeNewTask = function () {
             $scope.taskModal.hide();
         };
 
@@ -32,7 +32,7 @@
 
     controllers.controller('ActionsCtrl', function ($scope, $location, Tasks) {
 
-        $scope.clearStorage = function () {
+        $scope.deleteTasks = function () {
             Tasks.clear();
             $location.path('/tab/dash');
         };
@@ -44,14 +44,6 @@
             $location.path('/tab/dash');
         };
 
-    });
-
-    controllers.controller('FriendsCtrl', function ($scope, Friends) {
-        $scope.friends = Friends.all();
-    });
-
-    controllers.controller('FriendDetailCtrl', function ($scope, $stateParams, Friends) {
-        $scope.friend = Friends.get($stateParams.friendId);
     });
 
 })(window.angular);
