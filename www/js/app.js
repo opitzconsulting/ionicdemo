@@ -5,25 +5,6 @@
 
     var app = angular.module('starter', ['ionic', 'ngStorage', 'starter.controllers', 'starter.services']);
 
-    app.config(function ($stateProvider, $urlRouterProvider) {
-        $stateProvider
-            .state('tab', {
-                url: "/tab",
-                abstract: true,
-                templateUrl: "templates/tabs.html"
-            })
-            .state('tab.dash', {
-                url: '/dash',
-                views: {
-                    'tab-dash': {
-                        templateUrl: 'templates/tab-dash.html',
-                        controller: 'DashCtrl'
-                    }
-                }
-            });
-        $urlRouterProvider.otherwise('/tab/dash');
-    });
-
     app.run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
             // Hide the accessory bar by default
