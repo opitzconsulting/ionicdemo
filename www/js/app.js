@@ -3,7 +3,7 @@
 (function (angular) {
     'use strict';
 
-    var app = angular.module('starter', ['ionic', 'ngStorage', 'starter.controllers', 'starter.services']);
+    var app = angular.module('starter', ['ionic', 'ngCordova', 'ngStorage', 'starter.controllers', 'starter.services']);
 
     app.config(function ($stateProvider, $urlRouterProvider) {
         $stateProvider
@@ -18,6 +18,15 @@
                     'tab-dash': {
                         templateUrl: 'templates/tab-dash.html',
                         controller: 'DashCtrl'
+                    }
+                }
+            })
+            .state('tab.qrcodescan', {
+                url: '/qrcodescan',
+                views: {
+                    'tab-qrcodescan': {
+                        templateUrl: 'templates/tab-qrcodescan.html',
+                        controller: 'QrCodeScanCtrl'
                     }
                 }
             });
