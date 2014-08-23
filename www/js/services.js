@@ -8,7 +8,7 @@
         var storage = $localStorage.$default(emptyStorage);
 
         function add(task) {
-            storage.tasks.unshift(task);
+            storage.tasks.push(task);
         }
 
         function all() {
@@ -21,7 +21,7 @@
 
         function init() {
             if (!storage.initalized) {
-                add({ title: 'Install ionic' });
+                add({ title: 'Install Ionic' });
                 add({ title: 'Create Todo app' });
                 add({ title: 'Make money!' });
                 storage.initalized = true;
