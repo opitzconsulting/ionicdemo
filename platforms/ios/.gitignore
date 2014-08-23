@@ -3,3 +3,5 @@
 *.pbxuser
 .DS_Store
 build/
+Ionic Demo App.xcodeproj/project.xcworkspace/xcuserdata
+Ionic Demo App.xcodeproj/xcuserdata

@@ -3,7 +3,7 @@
 (function (angular) {
     'use strict';
 
-    var app = angular.module('starter', ['ionic', 'ngStorage', 'starter.controllers', 'starter.services']);
+    var app = angular.module('starter', ['ionic', 'ngCordova', 'ngStorage', 'starter.controllers', 'starter.services']);
 
     app.config(function ($stateProvider, $urlRouterProvider) {
         $stateProvider
