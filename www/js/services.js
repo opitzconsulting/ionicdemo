@@ -8,7 +8,7 @@
         var storage = $localStorage.$default(emptyStorage);
 
         function add(task) {
-            storage.tasks.unshift(task);
+            storage.tasks.push(task);
         }
 
         function all() {
