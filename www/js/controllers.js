@@ -30,15 +30,8 @@
 
     });
 
-    controllers.controller('QrCodeScanCtrl', function ($scope, $cordovaBarcodeScanner) {
+    controllers.controller('QrCodeScanCtrl', function ($scope) {
 
-        $scope.scannedBarcode = 'No barcode scanned yet.';
-
-        $scope.scanQrCode = function () {
-            $cordovaBarcodeScanner.scan().then(function (scannedQrCode) {
-                $scope.scannedBarcode = scannedQrCode.text;
-            });
-        }
     });
 
 })(window.angular);
